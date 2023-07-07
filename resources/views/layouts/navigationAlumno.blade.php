@@ -64,9 +64,16 @@
                     </x-slot>
 
                     <x-slot name="content">
+                        <!-- Datos usuario -->
+                        <div class="pt-4 pb-1 border-t border-gray-200">
+                        <div class="px-4">
+                            <div class="font-medium text-sm text-gray-800">{{ Auth::user()->name }}</div>
+                            <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div>
+                        </div>
+                        </div>
                         <!-- Link perfil -->
                         <x-dropdown-link :href="route('profile.edit')">
-                            {{ __('Perfil') }}
+                            {{ __('Configuración') }}
                         </x-dropdown-link>
 
                         <!-- Link cerrar sesión -->

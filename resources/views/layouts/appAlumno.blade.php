@@ -14,7 +14,8 @@
         <link rel="stylesheet" href="{{asset('css/all.min.css')}}">
         <!-- overlayScrollbars -->
         <link rel="stylesheet" href="{{asset('css/OverlayScrollbars.min.css')}}">    
-
+        <!-- Personal styles -->
+        <link rel="stylesheet" href="{{asset('css/main.css')}}">  
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>

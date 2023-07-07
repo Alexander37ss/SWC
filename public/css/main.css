@@ -1,0 +1,29 @@
+/* Body */
+main {
+}
+
+/* Clases texto */
+
+.text-navbar{
+    font-size: 1rem !important;
+    font-weight: 500!important;
+    line-height: 1.5rem;
+}
+
+.text-dgeti{
+    color: #ca0e07 !important;
+}
+
+/* Clases botones */
+
+.btn-dgeti{
+    background-color: #9b0602 !important;
+}
+
+/* Clases sombras */
+
+.shadow-small{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* Clases bordes */
