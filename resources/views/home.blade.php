@@ -69,7 +69,7 @@
     </div>
     <br><br><br><br>
     <div align="center">
-      <a class="bg-transparent cursor-pointer hover:bg-blue-600 text-black font-semibold hover:text-white py-3 px-7 border border-blue-600 hover:border-transparent rounded">
+      <a href="{{url('login')}}" class="bg-transparent cursor-pointer hover:bg-blue-600 text-black font-semibold hover:text-white py-3 px-7 border border-blue-600 hover:border-transparent rounded">
         Iniciar sesión
       </a>
       <br><br>

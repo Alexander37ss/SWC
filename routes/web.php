@@ -14,18 +14,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/* Sin rol */
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/noticias', function () {
+    return view('noticias');
+});
 Route::get('/home', function () {
     return view('home');
 })->name('home');
-
 Route::get('/homeAlumno', function () {
     return view('homeAlumno');
 })->middleware(['auth', 'verified'])->name('homeAlumno');
 
+/* Con autenticación */
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

@@ -1,5 +1,5 @@
-<header class="bg-white">
-  <nav class="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8 shadow-small" aria-label="Global">
+<header class="bg-white relative z-50">
+  <nav class="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
     <div class="flex mr-10">
       <a href="{{url('home')}}" class="-m-1.5 p-1.5">
         <span class="sr-only">Your Company</span>
@@ -34,7 +34,7 @@
             From: "opacity-100 translate-y-0"
             To: "opacity-0 translate-y-1"
         -->
-        <div class="absolute hidden -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5" id="dropdown-nav">
+        <div class="absolute hidden -left-8 top-full mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5" id="dropdown-nav">
           <div class="p-4">
             <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
               <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
@@ -125,7 +125,7 @@
         </div>
       </div>
 
-      <a href="#" class="text-sm flex font-semibold text-navbar leading-6 text-gray-900">Noticias</a>
+      <a href="{{url('noticias')}}" class="text-sm flex font-semibold text-navbar leading-6 text-gray-900">Noticias</a>
       <a href="#" class="text-sm flex font-semibold text-navbar leading-6 text-gray-900">Alumnos</a>
       <a href="#" class="text-sm flex font-semibold text-navbar leading-6 text-gray-900">Docentes</a>
     </div>
@@ -138,7 +138,7 @@
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
               </svg>
           </div>
-          <input type="search" id="default-search" class="block w-full px-4 py-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-red-500 focus:border-red-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500" placeholder="Examenes, Lista de aceptados..." required>
+          <input type="search" id="default-search" class="block w-full px-4 py-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-red-500 focus:border-red-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500" placeholder="Inscripciones, Lista de aceptados..." required>
           <button type="submit" class="text-white bg-red-600 absolute bottom-1 right-2.5 hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-3 py-1 dark:bg-red-600 dark:hover:bg-red-500 dark:focus:ring-red-600">Buscar</button>
       </div>
       </form>
@@ -148,9 +148,9 @@
     </div>
   </nav>
   <!-- Mobile menu, show/hide based on menu open state. -->
-  <div class="lg:hidden" role="dialog" aria-modal="true">
+  <div class="relative lg:hidden z-50" role="dialog" aria-modal="true">
     <!-- Background backdrop, show/hide based on slide-over state. -->
-    <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto  bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10" id="menu">
+    <div class="fixed inset-y-0 right-0 w-full overflow-y-auto  bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10" id="menu">
       <div class="flex items-center justify-between">
         <a href="{{url('home')}}" class="-m-1.5 p-1.5">
           <span class="sr-only">Your Company</span>
