@@ -1,6 +1,6 @@
 /* Body */
 main {
-    background-color: white !important;
+    background-color: #faf9f7 !important;
 }
 
 /* Clases texto */
@@ -28,3 +28,8 @@ main {
 }
 
 /* Clases bordes */
+
+/* Clases div */
+.custom-div{
+    width: 160px; /* Ancho personalizado */
+}

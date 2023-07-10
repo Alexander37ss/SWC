@@ -4,7 +4,7 @@
 <!-- Encabezado principal -->
 <div class="container-fluid my-0">
   <section class="background-radial-gradient text-center lg:text-left">
-    <div class="relative overflow-hidden bg-cover bg-no-repeat bg-[50%] bg-[url('https://scontent.fcul2-1.fna.fbcdn.net/v/t39.30808-6/338030777_1012176836425008_7132372811127651829_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=wi22GzL3ElUAX-V0MUe&_nc_ht=scontent.fcul2-1.fna&oh=00_AfDyXYdvIfwpgcC2HLWT_BgpYPIIX0j-5gUPVj5kMweo-g&oe=64AB1AA5')] h-[600px] w-[100%]">
+    <div class="relative overflow-hidden bg-cover bg-no-repeat bg-[50%] bg-[url('https://lineadirectaportal.com/wp-content/uploads/2023/04/Cetis-107.png')] h-[600px] w-[100%]">
       <div
         class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.75)] bg-fixed">
         <div class="flex h-full items-center justify-center">
