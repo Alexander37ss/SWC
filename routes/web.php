@@ -27,6 +27,12 @@ Route::get('/home', function () {
 Route::get('/homeAlumno', function () {
     return view('homeAlumno');
 })->middleware(['auth', 'verified'])->name('homeAlumno');
+Route::get('/discusion', function () {
+    return view('alumnos.discusion');
+})->middleware(['auth', 'verified']);
+Route::get('/tramites/solicitud_justificante', function () {
+    return view('alumnos.justificante');
+})->middleware(['auth', 'verified']);
 
 /* Con autenticación */
 Route::middleware('auth')->group(function () {

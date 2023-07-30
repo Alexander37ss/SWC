@@ -1,21 +1,23 @@
-const Dropdown = document.querySelector('#dropdown-nav');
-const btnDropdown = document.querySelector('#btn-dropdown');
-const btnOpenMenu = document.querySelector('#btn-openmenu');
-const btnCloseMenu = document.querySelector('#btn-closemenu');
-const Menu = document.querySelector('#menu');
+//Dropdown Hover Navbar Alumno
+const tramitesBtn = document.querySelector('#btnTramites');
+const pagosBtn = document.querySelector('#btnPagos');
+const calificacionesBtn = document.querySelector('#btnCalificaciones');
+const tramitesMenu = document.querySelector('#mega-menu-dropdown');
+const nav = document.querySelector('#nav');
 
-btnDropdown.addEventListener('click', toggleDropdown);
-btnOpenMenu.addEventListener('click', openMenu);
-btnCloseMenu.addEventListener('click', closeMenu);
+tramitesBtn.addEventListener('mouseover', showMenuTramites);
+pagosBtn.addEventListener('mouseover', hideMenuTramites);
+calificacionesBtn.addEventListener('mouseover', hideMenuTramites);
+tramitesMenu.addEventListener('mouseover', showMenuTramites);
+nav.addEventListener('mouseleave', hideMenuTramites);
 
-function toggleDropdown(){
-    Dropdown.classList.toggle('hidden');
-}
-
-function closeMenu(){
-    Menu.classList.add('hidden');
-}
-
-function openMenu(){
-    Menu.classList.remove('hidden');
-}
+function showMenuTramites(){
+    tramitesBtn.classList.add('bg-[#6e1229]');
+    tramitesMenu.classList.remove('hidden');
+    console.log('1');
+};
+function hideMenuTramites(){
+    tramitesBtn.classList.remove('bg-[#6e1229]');
+    tramitesMenu.classList.add('hidden');
+    console.log('2');
+};
